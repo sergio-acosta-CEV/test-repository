@@ -25,5 +25,4 @@ DROP USER IF EXISTS 'testuser';
 CREATE USER 'dbuser' IDENTIFIED BY 'dbpassword';
 CREATE USER 'testuser' IDENTIFIED BY 'testpassword';
 GRANT SELECT, INSERT, UPDATE ON prod.* TO 'dbuser';
-GRANT DELETE ON prod.connection TO 'dbuser';
 GRANT SELECT, INSERT, UPDATE, DELETE ON test.* TO 'testuser';
